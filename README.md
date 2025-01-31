@@ -45,7 +45,6 @@ This project is designed to implement a Django application that manages Frequent
    DEBUG=True
    SECRET_KEY=your_secret_key
    ALLOWED_HOSTS=127.0.0.1,localhost
-   REDIS_URL=redis://localhost:6379/0
    ```
 
 5. Apply Migrations:
@@ -104,52 +103,6 @@ http://localhost:8000/admin/
 ```
 Use the superuser credentials to log in and manage FAQs.
 
-## Testing
-
-1. Run Unit Tests:
-   ```bash
-   python manage.py test
-   ```
-
-2. Lint Code:
-   ```bash
-   flake8
-   ```
-
-## Docker Deployment
-
-1. Build the Docker Image:
-   ```bash
-   docker build -t django-faq .
-   ```
-
-2. Run Docker Compose:
-   ```bash
-   docker-compose up
-   ```
-
-The application will be available at `http://localhost:8000/`.
-
-## Contribution Guidelines
-
-1. Fork the repository.
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit your changes with meaningful messages:
-   ```bash
-   git commit -m "feat: Add multilingual FAQ model"
-   ```
-4. Push your changes:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-5. Open a Pull Request.
-
-## License
-This project is licensed under the MIT License.
-
----
-
+ application will be available at `http://localhost:8000/`.
+```
 Happy coding! 🚀
